@@ -1,0 +1,253 @@
+@charset "utf-8";
+/* CSS Document */
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY GENERAL */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f7;
+    color: #333;
+}
+
+/* HEADER Y NAV */
+header {
+    background-color: #f5f5f7;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem 3rem; /* más espacio */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo-principal {
+    width: 50px; /* achicado */
+    height: 50px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-left: auto; /* lleva los links a la derecha */
+}
+
+.nav-links a {
+    color: #0d1b2a;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e63946;
+}
+
+/* HERO PRINCIPAL */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('imagenes/obra1.png') center/cover no-repeat;
+   
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+/* HERO: TITULO */
+.intro h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: #f8f1e5;
+    margin-bottom: 2rem; /* <<< NUEVO margen debajo del título */
+}
+
+/* HERO: BOTÓN \"DESCUBRÍ EL MOVIMIENTO\" */
+.btn-movimiento {
+    margin-top: 3rem; /* MÁS SEPARACIÓN */
+    background-color: #1b263b; /* AZUL PROFUNDO */
+    color: #f8f1e5;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-movimiento:hover {
+    background-color: #415a77; /* CELESTE SUAVE EN HOVER */
+    transform: translateY(-5px);
+}
+
+
+/* SECCIÓN DE BOTONES INICIO */
+.botones-inicio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #f5f5f7;
+    padding: 3rem 1rem;
+}
+
+.boton-inicio {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #0d1b2a;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 150px;
+    text-align: center;
+    color: #0d1b2a;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boton-inicio img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.5rem;
+}
+
+.boton-inicio span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.boton-inicio:hover {
+    background-color: #778da9; /* CELESTE SUAVE */
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+/* FOOTER */
+footer {
+    background-color: #0d1b2a;
+    color: #f8f1e5;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+/* contexto */
+
+.contenedor-contexto {
+  padding: 2rem;
+  background: linear-gradient(to bottom, #fff5f5, #e4f0ff);
+  font-family: 'Poppins', sans-serif;
+}
+
+.contenedor-contexto h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #d32f2f;
+  margin-bottom: 2rem;
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.foto-con-texto {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.foto-con-texto img {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  margin: 0 auto;
+  display: block;
+}
+
+
+.pie-foto {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  font-style: italic;
+}
+
+.texto-contexto {
+  flex: 1 1 55%;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+
+
+
+
+.contenedor-contexto {
+  position: relative;
+  overflow: hidden;
+}
+
+.decoraciones-fondo {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-top: 2rem;
+}
+
+.elemento-decorativo {
+  position: absolute;
+  opacity: 0.8;
+  max-width: 120px;
+  filter: drop-shadow(3px 5px 5px rgba(0,0,0,0.3));
+  animation: flotar 8s infinite ease-in-out;
+}
+
+.ojo {
+  top: 10%;
+  left: 20%;
+}
+
+.nube {
+  bottom: 5%;
+  left: 60%;
+  max-width: 200px;
+}
+
+.llave {
+  top: 30%;
+  right: 10%;
+}
+
+@keyframes flotar {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
