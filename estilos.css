@@ -6,21 +6,21 @@
     box-sizing: border-box;
 }
 
-/* BODY GENERAL */
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f5f5f7;
     color: #333;
 }
 
-/* HEADER Y NAV */
+
 header {
     background-color: #f5f5f7;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    padding: 1rem 3rem; /* más espacio */
+    padding: 1rem 3rem;
 }
 
 .navbar {
@@ -31,7 +31,7 @@ header {
 }
 
 .logo-principal {
-    width: 50px; /* achicado */
+    width: 50px;
     height: 50px;
     cursor: pointer;
 }
@@ -40,7 +40,7 @@ header {
     list-style: none;
     display: flex;
     gap: 2rem;
-    margin-left: auto; /* lleva los links a la derecha */
+    margin-left: auto;
 }
 
 .nav-links a {
@@ -54,7 +54,7 @@ header {
     color: #e63946;
 }
 
-/* HERO PRINCIPAL */
+
 .hero {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
                 url('imagenes/obra1.png') center/cover no-repeat;
@@ -69,18 +69,18 @@ header {
     position: relative;
 }
 
-/* HERO: TITULO */
+
 .intro h1 {
     font-family: 'Playfair Display', serif;
     font-size: 4rem;
     color: #f8f1e5;
-    margin-bottom: 2rem; /* <<< NUEVO margen debajo del título */
+    margin-bottom: 2rem; 
 }
 
-/* HERO: BOTÓN \"DESCUBRÍ EL MOVIMIENTO\" */
+
 .btn-movimiento {
-    margin-top: 3rem; /* MÁS SEPARACIÓN */
-    background-color: #1b263b; /* AZUL PROFUNDO */
+    margin-top: 3rem; 
+    background-color: #1b263b; 
     color: #f8f1e5;
     padding: 0.8rem 2rem;
     font-size: 1.2rem;
@@ -92,12 +92,12 @@ header {
 }
 
 .btn-movimiento:hover {
-    background-color: #415a77; /* CELESTE SUAVE EN HOVER */
+    background-color: #415a77; 
     transform: translateY(-5px);
 }
 
 
-/* SECCIÓN DE BOTONES INICIO */
+
 .botones-inicio {
     display: flex;
     flex-wrap: wrap;
@@ -133,12 +133,12 @@ header {
 }
 
 .boton-inicio:hover {
-    background-color: #778da9; /* CELESTE SUAVE */
+    background-color: #778da9; 
     color: #fff;
     transform: translateY(-5px);
 }
 
-/* FOOTER */
+
 footer {
     background-color: #0d1b2a;
     color: #f8f1e5;
@@ -152,7 +152,7 @@ footer {
 
 
 
-/* contexto */
+
 
 .contenedor-contexto {
   padding: 2rem;
@@ -225,14 +225,14 @@ footer {
   position: relative;
   overflow: hidden;
   border-radius: 0;
-	margin-bottom: 40px;/* sin bordes redondeados ya que ahora va de borde a borde */
+	margin-bottom: 40px;
 }
 
 .hero-contexto::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45); /* oscurece para destacar el texto */
+  background: rgba(0, 0, 0, 0.45); 
   z-index: 0;
 }
 
@@ -332,7 +332,7 @@ margin-top: 40px;
 
 
 
-/* SECCIÓN ARTISTA */
+
 .contenedor-artista {
   padding: 2rem;
   font-family: 'Poppins', sans-serif;
@@ -381,7 +381,7 @@ margin-top: 40px;
 
 
 
-/* GALERÍA DE OBRAS */
+
 .galeria-obras {
   margin-top: 2rem;
   text-align: center;
@@ -453,7 +453,7 @@ margin-top: 40px;
 
 
 
-/* Estilo general */
+
 .slider-obras {
   display: flex;
   justify-content: center;
@@ -464,8 +464,12 @@ margin-top: 40px;
   display: flex;
   align-items: center;
   max-width: 900px;
-  width: 100%;
+  width: 70%;
   position: relative;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
 }
 
 .slide-container {
@@ -483,7 +487,6 @@ margin-top: 40px;
   width: 100%;
   transition: opacity 0.5s ease-in-out;
   padding: 10px;
-
 }
 
 .slide.active {
@@ -493,31 +496,43 @@ margin-top: 40px;
 .slider img {
   height: 400px;
   width: 100%;
-  object-fit: cover;
-  display: block;
+  object-fit: contain;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
+
+.slider img:hover {
+  transform: scale(1.02);
+}
 
 .autor {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   color: #444;
+  margin-top: 10px;
 }
 
-/* Botones */
+
 .prev,
 .next {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.1);
   border: none;
-  font-size: 2rem;
+  font-size: 2.5rem;
   cursor: pointer;
   color: #333;
-  padding: 0 15px;
+  padding: 10px 18px;
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .prev:hover,
 .next:hover {
-  color: #ff3c3c;
+  background-color: rgba(255, 60, 60, 0.8);
+  color: white;
+  transform: scale(1.1);
 }
 
 
@@ -533,7 +548,7 @@ margin-top: 40px;
 }
 
 .texto-obra {
-  background-color: #fff; /* o transparent si preferís sin fondo */
+  background-color: #fff;
   border-radius: 16px;
   padding: 1.5rem 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
