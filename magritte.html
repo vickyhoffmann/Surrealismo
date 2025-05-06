@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Surrealismo - René Magritte</title>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <img src="imagenes/icono1.png" alt="Logo Surrealismo" class="logo-principal" onclick="location.href='index.html'">
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="contexto.html">Contexto Histórico</a></li>
+      <li><a href="figuras.html">Principales Figuras</a></li>
+      <li><a href="obras.html">Obras Representativas</a></li>
+      <li><a href="filosofia.html">Filosofía</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+			<main class="contenedor-artista">
+		
+
+  <section class="presentacion-artista">
+    <img src="imagenes/magritte1.jpg" alt="Foto de René Magritte" class="flotante">
+    <div class="texto-artista">
+      <h1>René Magritte</h1>
+      <p>René Magritte nació el 21 de noviembre de 1898 en Lessines, Bélgica. Su infancia estuvo marcada por un evento traumático: a los 13 años, su madre se suicidó arrojándose al río Sambre. Este hecho influyó profundamente en su obra, donde a menudo aparecen figuras con el rostro cubierto.</p>
+	 <p> Desde joven, Magritte estudió en la Academia de Bellas Artes de Bruselas. Durante sus primeros años como artista, exploró el cubismo y el futurismo, pero en la década de 1920 descubrió el surrealismo, movimiento con el que se identificó plenamente.</p>
+	<p> A diferencia de otros surrealistas, no buscaba representar imágenes abstractas o sueños ilógicos, sino que jugaba con la percepción y el significado de los objetos cotidianos. Sus pinturas presentaban escenas realistas con elementos inesperados o contradictorios, como en El hijo del hombre (1964), donde un hombre con bombín tiene una manzana flotando frente a su rostro.</p>
+    </div>
+  </section>
+		
+		<section class="presentacion-artista inverso">
+  <img src="imagenes/magritte2.jpg" alt="Otra foto de René Magritte" class="flotante3">
+  <div class="texto-artista">
+	   <p>Magritte trabajó durante años como diseñador gráfico y publicitario, lo que influyó en su estilo pictórico limpio y claro. Su obra es enigmática y filosófica, desafiando constantemente la manera en que percibimos la realidad.</p>
+
+    <p>Además de sus pinturas más famosas, también escribió ensayos y reflexiones sobre el arte y la percepción, destacando su interés por cuestionar la lógica visual y el lenguaje. Colaboró con escritores y otros artistas surrealistas en revistas y exposiciones, contribuyendo activamente al movimiento.</p>
+
+    <p>Durante su carrera, expuso en importantes ciudades como París, Nueva York y Londres, ganando reconocimiento internacional por su estilo único y por su capacidad de alterar la forma en que vemos lo cotidiano.</p>
+
+    <p>Murió el 15 de agosto de 1967 en Bruselas, dejando un legado que influyó en el arte conceptual, la publicidad y el diseño gráfico contemporáneo.</p>
+
+  </div>
+		</section>
+
+
+  <section class="galeria-obras">
+  <h2>Obras destacadas</h2>
+  <div class="grid-obras">
+    <div class="obra">
+      <img src="imagenes/obramagritte1.png" alt="El hijo del hombre" class="imagen-galeria">
+      <div class="info-obra">El hijo del hombre (1964)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obramagritte2.png" alt="Los amantes" class="imagen-galeria">
+      <div class="info-obra">Los amantes (1928)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obramagritte3.png" alt="La traición de las imágenes" class="imagen-galeria">
+      <div class="info-obra">La traición de las imágenes (1929)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obramagritte4.jpeg" alt="El imperio de las luces" class="imagen-galeria">
+      <div class="info-obra">El imperio de las luces (1953-54)
+    </div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obramagritte5.jpeg" alt="La condición humana" class="imagen-galeria">
+      <div class="info-obra">La condición humana (1933)
+    </div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obramagritte6.jpeg" alt="El castillo de los Pirineos" class="imagen-galeria">
+      <div class="info-obra">El castillo de los Pirineos (1959)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obramagritte7.png" alt="La reproducción prohibida" class="imagen-galeria">
+      <div class="info-obra">La reproducción prohibida (1937)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obramagritte8.jpg" alt="Golconda" class="imagen-galeria">
+      <div class="info-obra">Golconda (1953)</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+	
+	
+<footer>
+  <p>&copy; 2025 Surrealismo - Todos los derechos reservados</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+	
+	
+		<div id="lightbox" class="lightbox">
+  <span class="cerrar" onclick="cerrarLightbox()">&times;</span>
+  <img class="lightbox-contenido" id="imagenLightbox">
+  <a class="anterior" onclick="cambiarImagen(-1)">&#10094;</a>
+  <a class="siguiente" onclick="cambiarImagen(1)">&#10095;</a>
+</div>
+
+	
+	<script>
+  const imagenes = document.querySelectorAll('.galeria-obras .imagen-galeria');
+  const lightbox = document.getElementById('lightbox');
+  const imagenLightbox = document.getElementById('imagenLightbox');
+  let imagenActual = 0;
+
+  imagenes.forEach((img, i) => {
+    img.addEventListener('click', () => {
+      imagenActual = i;
+      mostrarImagen();
+      lightbox.style.display = 'block';
+    });
+  });
+
+  function mostrarImagen() {
+    imagenLightbox.src = imagenes[imagenActual].src;
+  }
+
+  function cerrarLightbox() {
+    lightbox.style.display = 'none';
+  }
+
+  function cambiarImagen(n) {
+    imagenActual += n;
+    if (imagenActual < 0) imagenActual = imagenes.length - 1;
+    if (imagenActual >= imagenes.length) imagenActual = 0;
+    mostrarImagen();
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (lightbox.style.display === 'block') {
+      if (e.key === 'ArrowLeft') cambiarImagen(-1);
+      if (e.key === 'ArrowRight') cambiarImagen(1);
+      if (e.key === 'Escape') cerrarLightbox();
+    }
+  });
+</script>
+
+</body>
+</html>

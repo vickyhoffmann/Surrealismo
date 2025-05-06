@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Surrealismo - Salvador Dalí</title>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <img src="imagenes/icono1.png" alt="Logo Surrealismo" class="logo-principal" onclick="location.href='index.html'">
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="contexto.html">Contexto Histórico</a></li>
+      <li><a href="figuras.html">Principales Figuras</a></li>
+      <li><a href="obras.html">Obras Representativas</a></li>
+      <li><a href="filosofia.html">Filosofía</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+	<main class="contenedor-artista">
+		
+
+  <section class="presentacion-artista">
+    <img src="imagenes/dali1.jpg" alt="Foto de Salvador Dalí" class="flotante">
+    <div class="texto-artista">
+      <h1>Salvador Dalí</h1>
+      <p> Salvador Dalí nació el 11 de mayo de 1904 en Figueras, España. Desde pequeño, mostró una gran habilidad para el dibujo y fue alentado por su familia a seguir una carrera artística. En 1922 ingresó a la Real Academia de Bellas Artes de San Fernando en Madrid, donde entró en contacto con las vanguardias artísticas de la época.</p>
+	 <p>Durante su juventud, Dalí experimentó con diversos estilos, desde el cubismo hasta el impresionismo, pero en 1929 conoció a André Breton y se unió al movimiento surrealista. Su arte se caracterizó por imágenes oníricas, formas distorsionadas y una gran influencia del psicoanálisis de Freud. Obras como La persistencia de la memoria (1931), con sus famosos relojes derretidos, lo convirtieron en un icono del surrealismo.</p>
+	<p> En el plano personal, Dalí tuvo una relación intensa con Gala Éluard, quien se convirtió en su musa y compañera de vida. Con el tiempo, su personalidad extravagante y su afán de protagonismo lo distanciaron del grupo surrealista. Breton incluso lo apodó "Avida Dollars" (un anagrama de su nombre) para criticar su enfoque comercial del arte.</p>
+    </div>
+  </section>
+		
+		<section class="presentacion-artista inverso">
+  <img src="imagenes/dali2.jpg" alt="Otra foto de Salvador Dalí" class="flotante3">
+  <div class="texto-artista">
+	 <p>Durante la Segunda Guerra Mundial, Dalí y Gala se exiliaron en Estados Unidos, donde trabajó en cine, moda y diseño. Colaboró con Walt Disney en el corto Destino y con Alfred Hitchcock en la película Recuerda (1945).</p>
+    <p> En sus últimos años, Dalí se enfocó en la pintura religiosa y científica, experimentando con la tercera dimensión y los efectos ópticos. Murió el 23 de enero de 1989 en Figueras, dejando un inmenso legado en la historia del arte.</p>
+	  <p>También fundó el Teatro-Museo Dalí en su ciudad natal, Figueras, una de sus mayores obras, donde plasmó su universo personal y artístico. En sus últimos años sufrió problemas de salud y depresión tras la muerte de Gala en 1982. Murió el 23 de enero de 1989, dejando un inmenso legado en la historia del arte y siendo recordado como una figura clave del surrealismo y la cultura del siglo XX.</p>
+  </div>
+		</section>
+
+
+  <section class="galeria-obras">
+  <h2>Obras destacadas</h2>
+  <div class="grid-obras">
+    <div class="obra">
+      <img src="imagenes/obra1.png" alt="La persistencia de la memoria" class="imagen-galeria">
+      <div class="info-obra">La persistencia de la memoria (1931)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obradali2.jpg" alt="Sueño causado por el vuelo de una abeja" class="imagen-galeria">
+      <div class="info-obra">Sueño causado por el vuelo de una abeja (1944)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obradali3.jpg" alt="La tentación de San Antonio" class="imagen-galeria">
+      <div class="info-obra">La tentación de San Antonio (1946)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obradali4.jpeg" alt="El gran masturbador" class="imagen-galeria">
+      <div class="info-obra">El gran masturbador (1929)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obradali5.jpeg" alt="Construcción blanda con judías hervidas" class="imagen-galeria">
+      <div class="info-obra">Construcción blanda con judías hervidas (1936)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obradali6.jpeg" alt="El rostro de la guerra" class="imagen-galeria">
+      <div class="info-obra">El rostro de la guerra (1940)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obradali7.jpeg" alt="Cristo de San Juan de la Cruz" class="imagen-galeria">
+      <div class="info-obra">Cristo de San Juan de la Cruz (1951)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obradali8.jpeg" alt="Galatea de las esferas" class="imagen-galeria">
+      <div class="info-obra">Galatea de las esferas (1952)</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+	
+	
+	
+<footer>
+  <p>&copy; 2025 Surrealismo - Todos los derechos reservados</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+	
+	<div id="lightbox" class="lightbox">
+  <span class="cerrar" onclick="cerrarLightbox()">&times;</span>
+  <img class="lightbox-contenido" id="imagenLightbox">
+  <a class="anterior" onclick="cambiarImagen(-1)">&#10094;</a>
+  <a class="siguiente" onclick="cambiarImagen(1)">&#10095;</a>
+</div>
+
+	
+	<script>
+  const imagenes = document.querySelectorAll('.galeria-obras .imagen-galeria');
+  const lightbox = document.getElementById('lightbox');
+  const imagenLightbox = document.getElementById('imagenLightbox');
+  let imagenActual = 0;
+
+  imagenes.forEach((img, i) => {
+    img.addEventListener('click', () => {
+      imagenActual = i;
+      mostrarImagen();
+      lightbox.style.display = 'block';
+    });
+  });
+
+  function mostrarImagen() {
+    imagenLightbox.src = imagenes[imagenActual].src;
+  }
+
+  function cerrarLightbox() {
+    lightbox.style.display = 'none';
+  }
+
+  function cambiarImagen(n) {
+    imagenActual += n;
+    if (imagenActual < 0) imagenActual = imagenes.length - 1;
+    if (imagenActual >= imagenes.length) imagenActual = 0;
+    mostrarImagen();
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (lightbox.style.display === 'block') {
+      if (e.key === 'ArrowLeft') cambiarImagen(-1);
+      if (e.key === 'ArrowRight') cambiarImagen(1);
+      if (e.key === 'Escape') cerrarLightbox();
+    }
+  });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Surrealismo - Luis Buñuel</title>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <img src="imagenes/icono1.png" alt="Logo Surrealismo" class="logo-principal" onclick="location.href='index.html'">
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="contexto.html">Contexto Histórico</a></li>
+      <li><a href="figuras.html">Principales Figuras</a></li>
+      <li><a href="obras.html">Obras Representativas</a></li>
+      <li><a href="filosofia.html">Filosofía</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+	<main class="contenedor-artista">
+		
+
+  <section class="presentacion-artista">
+    <img src="imagenes/bunuel1.jpeg" alt="Foto de Luis Buñuel" class="flotante">
+    <div class="texto-artista">
+      <h1>Luis Buñuel</h1>
+      <p>Luis Buñuel nació el 22 de febrero de 1900 en Calanda, España. Desde joven, se interesó por la literatura y el cine, y en 1917 se trasladó a Madrid para estudiar en la Residencia de Estudiantes, donde conoció a Salvador Dalí y Federico García Lorca.</p>
+	 <p> En 1925 viajó a París, donde entró en contacto con los surrealistas y comenzó a trabajar en cine. En 1929, junto con Dalí, dirigió Un perro andaluz, un cortometraje con escenas impactantes como la famosa secuencia del ojo cortado con una navaja. La película fue un éxito entre los surrealistas y estableció a Buñuel como un cineasta innovador.</p>
+	<p>Su siguiente película, La edad de oro (1930), fue aún más provocadora y crítica con la religión y la burguesía, lo que llevó a su prohibición en varios países. Durante la Guerra Civil Española, apoyó a la República y tuvo que exiliarse tras la victoria franquista.</p>
+	<p> En los años 40 y 50 trabajó en México, donde dirigió películas como Los olvidados (1950), una dura crítica a la pobreza, y Él (1953), sobre la obsesión y los celos. En su etapa final, dirigió obras maestras como El ángel exterminador (1962) y El discreto encanto de la burguesía (1972), donde combinó su crítica social con elementos surrealistas.</p>
+    </div>
+  </section>
+		
+		<section class="presentacion-artista inverso">
+  <img src="imagenes/bunuel2.jpeg" alt="Otra foto de Luis Buñuel" class="flotante3">
+  <div class="texto-artista">
+	 <p>El estilo de Buñuel se caracteriza por la combinación de lo real y lo onírico, con una narrativa fragmentada que desafía la lógica tradicional. Utilizaba el simbolismo, la ironía y el humor negro para criticar las instituciones sociales, especialmente la religión, la familia burguesa y el poder político. A lo largo de su carrera, evitó adherirse a un estilo único, manteniéndose siempre fiel a su espíritu provocador y libre.</p>
+<p>Colaboró con importantes escritores y artistas, como Jean-Claude Carrière, con quien escribió varios guiones en su etapa francesa. Sus películas, aunque incómodas para algunos sectores, ganaron prestigio en festivales internacionales y fueron aclamadas por su capacidad para cuestionar la realidad desde una mirada filosófica y subversiva.</p>
+<p>Buñuel murió el 29 de julio de 1983 en Ciudad de México. Su cine sigue siendo una referencia fundamental para directores contemporáneos y es considerado uno de los más grandes cineastas de la historia.</p>
+  </div>
+		</section>
+
+
+  <section class="galeria-obras">
+  <h2>Obras destacadas</h2>
+  <div class="grid-obras">
+    <div class="obra">
+      <img src="imagenes/obrabunuel1.png" alt="Un perro andaluz" class="imagen-galeria">
+      <div class="info-obra">Un perro andaluz (1929)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obrabunuel2.png" alt="La edad de oro" class="imagen-galeria">
+      <div class="info-obra">La edad de oro (1930)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obrabunuel3.jpg" alt="Los olvidados" class="imagen-galeria">
+      <div class="info-obra">Los olvidados (1950)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obrabunuel4.jpeg" alt="Él" class="imagen-galeria">
+      <div class="info-obra">Él (1953)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obrabunuel5.jpeg" alt="Nazarín" class="imagen-galeria">
+      <div class="info-obra">Nazarín (1959)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obrabunuel6.jpg" alt="Viridiana" class="imagen-galeria">
+      <div class="info-obra">Viridiana (1961)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obrabunuel7.png" alt="El ángel exterminador" class="imagen-galeria">
+      <div class="info-obra">El ángel exterminador (1962)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obrabunuel8.jpeg" alt="El discreto encanto de la burguesía" class="imagen-galeria">
+      <div class="info-obra">El discreto encanto de la burguesía (1972)</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+	
+	
+<footer>
+  <p>&copy; 2025 Surrealismo - Todos los derechos reservados</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+	
+	
+		<div id="lightbox" class="lightbox">
+  <span class="cerrar" onclick="cerrarLightbox()">&times;</span>
+  <img class="lightbox-contenido" id="imagenLightbox">
+  <a class="anterior" onclick="cambiarImagen(-1)">&#10094;</a>
+  <a class="siguiente" onclick="cambiarImagen(1)">&#10095;</a>
+</div>
+
+	
+	<script>
+  const imagenes = document.querySelectorAll('.galeria-obras .imagen-galeria');
+  const lightbox = document.getElementById('lightbox');
+  const imagenLightbox = document.getElementById('imagenLightbox');
+  let imagenActual = 0;
+
+  imagenes.forEach((img, i) => {
+    img.addEventListener('click', () => {
+      imagenActual = i;
+      mostrarImagen();
+      lightbox.style.display = 'block';
+    });
+  });
+
+  function mostrarImagen() {
+    imagenLightbox.src = imagenes[imagenActual].src;
+  }
+
+  function cerrarLightbox() {
+    lightbox.style.display = 'none';
+  }
+
+  function cambiarImagen(n) {
+    imagenActual += n;
+    if (imagenActual < 0) imagenActual = imagenes.length - 1;
+    if (imagenActual >= imagenes.length) imagenActual = 0;
+    mostrarImagen();
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (lightbox.style.display === 'block') {
+      if (e.key === 'ArrowLeft') cambiarImagen(-1);
+      if (e.key === 'ArrowRight') cambiarImagen(1);
+      if (e.key === 'Escape') cerrarLightbox();
+    }
+  });
+</script>
+
+</body>
+</html>
+

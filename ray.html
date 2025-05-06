@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Surrealismo - Man Ray</title>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <img src="imagenes/icono1.png" alt="Logo Surrealismo" class="logo-principal" onclick="location.href='index.html'">
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="contexto.html">Contexto Histórico</a></li>
+      <li><a href="figuras.html">Principales Figuras</a></li>
+      <li><a href="obras.html">Obras Representativas</a></li>
+      <li><a href="filosofia.html">Filosofía</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+	<main class="contenedor-artista">
+		
+
+  <section class="presentacion-artista">
+    <img src="imagenes/ray1.jpeg" alt="Foto de Man Ray" class="flotante">
+    <div class="texto-artista">
+      <h1>Man Ray</h1>
+      <p>Man Ray nació el 27 de agosto de 1890 en Filadelfia, Estados Unidos, bajo el nombre de Emmanuel Radnitzky. Desde joven mostró gran interés por el arte y la innovación, lo que lo llevó a estudiar dibujo y pintura en Nueva York. En esta ciudad entró en contacto con el movimiento dadaísta y comenzó a experimentar con la fotografía como medio artístico.</p>
+    <p>En 1921 se trasladó a París, donde se unió al círculo surrealista liderado por André Breton. Allí se convirtió en una figura central del arte de vanguardia, desarrollando una nueva forma de expresión visual a través de sus famosas "rayografías": imágenes fotográficas obtenidas sin cámara, que jugaban con la luz, las sombras y la abstracción.</p>
+    <p>Man Ray no solo fue pionero en la fotografía surrealista, sino que también exploró la escultura, el cine experimental y la pintura. Su obra se caracterizó por una constante búsqueda de lo inesperado, lo simbólico y lo erótico. Fotografió a grandes figuras del surrealismo como Salvador Dalí, André Breton, Paul Éluard y Marcel Duchamp, con quien mantuvo una estrecha colaboración.</p>
+    </div>
+  </section>
+		
+		<section class="presentacion-artista inverso">
+  <img src="imagenes/ray2.jpg" alt="Otra foto de Man Ray" class="flotante3">
+  <div class="texto-artista">
+	  <p>Durante la Segunda Guerra Mundial, debido al conflicto en Europa y su ascendencia judía, Man Ray regresó a Estados Unidos, donde continuó creando obras desde Los Ángeles. A pesar del cambio de entorno, nunca abandonó su enfoque experimental ni su interés por los sueños, el inconsciente y el lenguaje visual abstracto.</p>
+    <p>En 1951 regresó definitivamente a París, donde retomó su actividad artística con intensidad. Además de producir nuevas series fotográficas y objetos surrealistas, Man Ray publicó textos teóricos sobre su obra y participó en numerosas exposiciones internacionales.</p>
+    <p>Man Ray murió el 18 de noviembre de 1976 en París. Su legado transformó la fotografía en un arte autónomo, liberándola de su función documental. Su influencia se extiende hasta hoy en campos como la moda, la publicidad, el cine y el arte contemporáneo.</p>
+  </div>
+		</section>
+
+
+  <section class="galeria-obras">
+  <h2>Obras destacadas</h2>
+  <div class="grid-obras">
+    <div class="obra">
+      <img src="imagenes/obraray1.jpg" alt="Le Violon d’Ingres" class="imagen-galeria">
+      <div class="info-obra">Le Violon d’Ingres (1924)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obraray2.png" alt="Rayograph" class="imagen-galeria">
+      <div class="info-obra">Rayograph (1922)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obraray3.jpeg" alt="Noire et blanche" class="imagen-galeria">
+      <div class="info-obra">Noire et blanche (1926)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obraray4.jpg" alt="Cadeau" class="imagen-galeria">
+      <div class="info-obra">Cadeau (1921)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obraray5.jpeg" alt="L’Énigme d’Isidore Ducasse" class="imagen-galeria">
+      <div class="info-obra">L’Énigme d’Isidore Ducasse (1920)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obraray6.jpg" alt="Glass Tears (Larmes)" class="imagen-galeria">
+      <div class="info-obra">Glass Tears (Larmes) (1932)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obraray7.jpeg" alt="Les Amoureux" class="imagen-galeria">
+      <div class="info-obra">Les Amoureux (1936)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obraray8.jpeg" alt="Emak-Bakia" class="imagen-galeria">
+      <div class="info-obra">Emak-Bakia (1926)</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+	
+<footer>
+  <p>&copy; 2025 Surrealismo - Todos los derechos reservados</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+	
+	
+		<div id="lightbox" class="lightbox">
+  <span class="cerrar" onclick="cerrarLightbox()">&times;</span>
+  <img class="lightbox-contenido" id="imagenLightbox">
+  <a class="anterior" onclick="cambiarImagen(-1)">&#10094;</a>
+  <a class="siguiente" onclick="cambiarImagen(1)">&#10095;</a>
+</div>
+
+	
+	<script>
+  const imagenes = document.querySelectorAll('.galeria-obras .imagen-galeria');
+  const lightbox = document.getElementById('lightbox');
+  const imagenLightbox = document.getElementById('imagenLightbox');
+  let imagenActual = 0;
+
+  imagenes.forEach((img, i) => {
+    img.addEventListener('click', () => {
+      imagenActual = i;
+      mostrarImagen();
+      lightbox.style.display = 'block';
+    });
+  });
+
+  function mostrarImagen() {
+    imagenLightbox.src = imagenes[imagenActual].src;
+  }
+
+  function cerrarLightbox() {
+    lightbox.style.display = 'none';
+  }
+
+  function cambiarImagen(n) {
+    imagenActual += n;
+    if (imagenActual < 0) imagenActual = imagenes.length - 1;
+    if (imagenActual >= imagenes.length) imagenActual = 0;
+    mostrarImagen();
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (lightbox.style.display === 'block') {
+      if (e.key === 'ArrowLeft') cambiarImagen(-1);
+      if (e.key === 'ArrowRight') cambiarImagen(1);
+      if (e.key === 'Escape') cerrarLightbox();
+    }
+  });
+</script>
+
+</body>
+</html>

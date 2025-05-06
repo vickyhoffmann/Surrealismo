@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Surrealismo - Bibliografía</title>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <img src="imagenes/icono1.png" alt="Logo Surrealismo" class="logo-principal" onclick="location.href='index.html'">
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contexto.html">Contexto Histórico</a></li>
+            <li><a href="figuras.html">Principales Figuras</a></li>
+            <li><a href="obras.html">Obras Representativas</a></li>
+            <li><a href="filosofia.html">Filosofía</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="contenedor-contexto">
+
+  <div class="hero-contexto" style="background-image: url('imagenes/contactofondo.jpg');">
+    <h1>Contacto</h1>
+  </div>
+
+  <section class="formulario-contacto">
+    <p>¿Tenés dudas, comentarios o sugerencias? Completá el siguiente formulario y nos pondremos en contacto con vos.</p>
+
+    <form action="#" method="post" class="formulario">
+      <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="campo">
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" required>
+      </div>
+
+      <div class="campo">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="campo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Surrealismo - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>

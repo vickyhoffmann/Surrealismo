@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Surrealismo - André Breton</title>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <img src="imagenes/icono1.png" alt="Logo Surrealismo" class="logo-principal" onclick="location.href='index.html'">
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="contexto.html">Contexto Histórico</a></li>
+      <li><a href="figuras.html">Principales Figuras</a></li>
+      <li><a href="obras.html">Obras Representativas</a></li>
+      <li><a href="filosofia.html">Filosofía</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+		<main class="contenedor-artista">
+		
+
+  <section class="presentacion-artista">
+    <img src="imagenes/breton1.jpeg" alt="Foto de André Breton" class="flotante">
+    <div class="texto-artista">
+      <h1>André Breton</h1>
+      <p>André Breton nació el 19 de febrero de 1896 en Tinchebray, Francia. Desde joven mostró un gran interés por la literatura y la poesía, lo que lo llevó a estudiar medicina en París. Durante la Primera Guerra Mundial, trabajó como auxiliar en hospitales psiquiátricos, donde conoció las teorías de Sigmund Freud sobre el inconsciente. Esta influencia fue clave para el desarrollo del surrealismo.</p>
+	<p>Después de la guerra, Breton se unió al movimiento dadaísta, un grupo de artistas y escritores que rechazaban las normas establecidas y promovían el absurdo y la provocación en el arte. Sin embargo, pronto se distanció del dadaísmo y en 1924 publicó el Manifiesto Surrealista, en el que definió el surrealismo como un automatismo psíquico puro, basado en la libre asociación de ideas y la exploración del inconsciente.</p>
+	<p>Breton fue un líder influyente dentro del surrealismo, organizando exposiciones, revistas y promoviendo a artistas como Salvador Dalí, René Magritte y Man Ray. Sin embargo, también era conocido por su carácter autoritario y su tendencia a excluir a quienes no compartían su visión del movimiento.</p>
+    </div>
+  </section>
+		
+		<section class="presentacion-artista inverso">
+  <img src="imagenes/breton2.jpeg" alt="Otra foto de André Breton" class="flotante3">
+  <div class="texto-artista">
+	 <p> Durante la Segunda Guerra Mundial, se exilió en Estados Unidos y continuó difundiendo el surrealismo. Regresó a Francia en 1946, donde siguió escribiendo y promoviendo el arte surrealista hasta su muerte el 28 de septiembre de 1966 en París.</p>
+	  <p>Además de su obra teórica y literaria, Breton mantuvo una intensa actividad política, vinculándose por un tiempo al comunismo, aunque más tarde se distanciaría por sus diferencias con el estalinismo. Para él, el arte debía ser una herramienta de transformación social y espiritual, no una propaganda ideológica. Esta tensión entre lo político y lo poético atravesó gran parte de su pensamiento.</p>
+     <p>Breton dejó un gran legado en la literatura y el arte, influyendo no solo en la pintura y la poesía, sino también en el cine y la publicidad. Su búsqueda de una realidad superior más allá de lo racional sigue inspirando a artistas en la actualidad.</p>
+	  <p></p>
+  </div>
+		</section>
+
+
+  <section class="galeria-obras">
+  <h2>Obras destacadas</h2>
+  <div class="grid-obras">
+    <div class="obra">
+      <img src="imagenes/obrabreton1.jpeg" alt="Manifiesto del surrealismo" class="imagen-galeria">
+      <div class="info-obra">Manifiesto del surrealismo (1924)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obrabreton2.jpeg" alt="Nadja" class="imagen-galeria">
+      <div class="info-obra">Nadja (1928)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obrabreton3.jpeg" alt="Los vasos comunicantes" class="imagen-galeria">
+      <div class="info-obra">Los vasos comunicantes (1932)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obrabreton4.jpeg" alt="Segundo manifiesto del surrealismo" class="imagen-galeria">
+      <div class="info-obra">Segundo manifiesto del surrealismo (1930)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obrabreton5.jpeg" alt="El amor loco" class="imagen-galeria">
+      <div class="info-obra">El amor loco (1937)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obrabreton6.jpeg" alt="Arcano 17" class="imagen-galeria">
+      <div class="info-obra">Arcano 17 (1944)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obrabreton7.jpeg" alt="Antología del humor negro" class="imagen-galeria">
+      <div class="info-obra">Antología del humor negro (1940)</div>
+    </div>
+    <div class="obra">
+      <img src="imagenes/obrabreton8.jpeg" alt="Clair de terre" class="imagen-galeria">
+      <div class="info-obra">Clair de terre (1923)</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+	
+<footer>
+  <p>&copy; 2025 Surrealismo - Todos los derechos reservados</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+	
+	
+		<div id="lightbox" class="lightbox">
+  <span class="cerrar" onclick="cerrarLightbox()">&times;</span>
+  <img class="lightbox-contenido" id="imagenLightbox">
+  <a class="anterior" onclick="cambiarImagen(-1)">&#10094;</a>
+  <a class="siguiente" onclick="cambiarImagen(1)">&#10095;</a>
+</div>
+
+	
+	<script>
+  const imagenes = document.querySelectorAll('.galeria-obras .imagen-galeria');
+  const lightbox = document.getElementById('lightbox');
+  const imagenLightbox = document.getElementById('imagenLightbox');
+  let imagenActual = 0;
+
+  imagenes.forEach((img, i) => {
+    img.addEventListener('click', () => {
+      imagenActual = i;
+      mostrarImagen();
+      lightbox.style.display = 'block';
+    });
+  });
+
+  function mostrarImagen() {
+    imagenLightbox.src = imagenes[imagenActual].src;
+  }
+
+  function cerrarLightbox() {
+    lightbox.style.display = 'none';
+  }
+
+  function cambiarImagen(n) {
+    imagenActual += n;
+    if (imagenActual < 0) imagenActual = imagenes.length - 1;
+    if (imagenActual >= imagenes.length) imagenActual = 0;
+    mostrarImagen();
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (lightbox.style.display === 'block') {
+      if (e.key === 'ArrowLeft') cambiarImagen(-1);
+      if (e.key === 'ArrowRight') cambiarImagen(1);
+      if (e.key === 'Escape') cerrarLightbox();
+    }
+  });
+</script>
+
+</body>
+</html>
